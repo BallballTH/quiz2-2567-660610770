@@ -54,7 +54,7 @@ export default function Home() {
         {/* Post Owner Example*/}
         <PostOwnnerr {...postOwner}/>
 
-        {comments.map((comment:CommentProps) => (<Commentt {...comment} />))}
+        {comments.map((comment:CommentProps) => (<Commentt key = {comment.username} {...comment} />))}
 
       </div>
     </div>

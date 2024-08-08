@@ -38,7 +38,7 @@ export default function Comment({
               }
             </div>
       </div>
-      {replies.map((reply:ReplyProps) => (<Replyy {...reply} />))}
+      {replies.map((reply:ReplyProps) => (<Replyy key = {reply.username} {...reply} />))}
     </div>
   );
 }
