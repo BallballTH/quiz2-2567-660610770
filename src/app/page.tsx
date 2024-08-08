@@ -3,6 +3,7 @@
 import { PostOwnnerProps } from "@/libs/types"
 import { CommentProps } from "@/libs/types"
 import { ReplyProps } from "@/libs/types"
+import { comments } from "@/libs/comments"
 
 import Commentt from "@/components/Comment";
 
@@ -15,31 +16,6 @@ export default function Home() {
     commentText : "Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207" ,
     likeNum : 100};
 
-  const replies:ReplyProps[] = [
-    {userImagePath : "/profileImages/puppy.jpg",
-      username :"หมาน้อย" ,
-      replyText : "จริงค้าบบบบบบบบ",
-      likeNum : 0},
-
-    {userImagePath : "/profileImages/popcat.png",
-      username :"Cat Meme" ,
-      replyText : "ลิซ่าาาาาา",
-      likeNum : 2},
-   ];
-
-  const comments:CommentProps[] = [
-    {userImagePath : "/profileImages/lisa.jpg",
-     username :"Lisa",
-     commentText : "จริงค่า" ,
-     likeNum : 999 ,
-     replies : [replies[0],replies[1]]},
- 
-    {userImagePath : "/profileImages/charliebrown.jpg",
-       username :"Charlie Brown",
-       commentText : "บ้าไปแล้ว" ,
-       likeNum : 0 ,
-       replies : []},
-   ];
 
   return (
     <div
